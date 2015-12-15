@@ -21,7 +21,8 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
- 
-# salesforce-utilities
-Provide common/useful utilities when doing Salesforce development such as Apex utils.
-
+public class StringUtils {
+    public static boolean isEmpty(String value) {
+        return (value == null || value.trim() == '');
+    }
+}
